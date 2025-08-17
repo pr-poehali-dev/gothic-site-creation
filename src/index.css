@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@400;600;700&display=swap");
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -98,4 +100,8 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.bg-gradient-radial {
+  background: radial-gradient(var(--tw-gradient-stops));
 }
