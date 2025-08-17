@@ -92,13 +92,26 @@ export default {
 				'subtle-glow': {
 					'0%, 100%': { boxShadow: '0 0 20px rgba(74, 61, 71, 0.4)' },
 					'50%': { boxShadow: '0 0 40px rgba(74, 61, 71, 0.8)' }
+				},
+				'ghost-tilt': {
+					'0%': { transform: 'rotate(0deg) scale(1)' },
+					'25%': { transform: 'rotate(-2deg) scale(1.02)' },
+					'50%': { transform: 'rotate(0deg) scale(1)' },
+					'75%': { transform: 'rotate(2deg) scale(0.98)' },
+					'100%': { transform: 'rotate(0deg) scale(1)' }
+				},
+				'creepy-breath': {
+					'0%, 100%': { filter: 'blur(0.5px) brightness(0.8)' },
+					'50%': { filter: 'blur(1px) brightness(0.6)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'flicker': 'flicker 0.1s ease-in-out',
-				'subtle-glow': 'subtle-glow 3s ease-in-out infinite'
+				'subtle-glow': 'subtle-glow 3s ease-in-out infinite',
+				'ghost-tilt': 'ghost-tilt 4s ease-in-out infinite',
+				'creepy-breath': 'creepy-breath 3s ease-in-out infinite'
 			}
 		}
 	},
